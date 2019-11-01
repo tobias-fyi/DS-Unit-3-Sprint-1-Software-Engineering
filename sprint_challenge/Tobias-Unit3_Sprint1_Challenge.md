@@ -265,9 +265,11 @@ Acme Corporation isn't just a few .py files. If you want to grow in your career 
         That is, what is something you pay attention to when you review code, 
         and that you appreciate when others do the same for your code?
 
-The simple act of taking someone else through code that I've written allows me to view it from a different perspective. By doing so it forces you to go through it as if you were reading someone else's code, a process that will give you a good idea of how readable and understandable the code is. That being said, when I'm reading code I pay very close attention to that aspect of it–the readability and ease of understanding. Indeed, it's difficult not to, because you are quite literally _reading_ through it, trying to understand it. I also appreciate when others point that out about my code.
+The simple act of taking someone else through code that I've written allows me to view it from a different perspective. By doing so it forces me to read it as if it were someone else's code, a perspective that can provide a much more accurate measure of how readable and understandable the code is. While in the process of writing code, it is sometimes difficult to also be thinking about how well others would understand it.
 
-Additionally, I pay attention to is how neat and organized the code is, with special attention paid to naming and stylistic conventions.
+That being said, when I'm reading code I pay very close attention to that aspect of it–the readability, and ease with which the code's purpose can be understood. Indeed, it's difficult not to pay attention to that aspect, because by definition, the process quite literally means reading through it, trying to understand it. I also appreciate when others point that out about my code.
+
+As a designer and avid reader (of text other than code) I pay particularly close attention to naming and stylistic conventions. I notice immediately when code is not neat, organized, and consistent—including my own. However, I realize that there is always room for improvement, and that sometimes my desire for neatness actually works against the overall effectiveness of the code. When others point out ways that I could improve, I am always appreciative.
 
 ---
 
