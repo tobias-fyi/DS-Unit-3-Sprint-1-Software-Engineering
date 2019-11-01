@@ -33,7 +33,9 @@ Good luck!
 
 ## Part 1 - Keeping it Classy
 
-As an employee of Acme Corporation, you're always looking for ways to better organize the vast quantities and variety of goods your company manages and sells. Everything Acme sells is considered a Product, and must have the following fields (variables that live "inside" the class):
+As an employee of Acme Corporation, you're always looking for ways to better organize the vast quantities and variety of goods your company manages and sells.
+
+Everything Acme sells is considered a `Product`, and must have the following fields (variables that live "inside" the class):
 
 - `name` (string with no default)
 - `price` (integer with default value 10)
@@ -45,7 +47,7 @@ Write a Python class to model the above data. Make sure you are precise in your 
 
 > Hint - random.randint should be able to serve your random number needs.
 
-Save the class in acme.py, and you can test your code in a Python repl as follows:
+Save the class in `acme.py`, and you can test your code in a Python repl as follows:
 
     >>> from acme import Product
     >>> prod = Product('A Cool Toy')
