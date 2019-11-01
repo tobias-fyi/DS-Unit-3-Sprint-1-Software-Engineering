@@ -1,15 +1,15 @@
 # Data Science Unit 3 Sprint Challenge 1
 
 - [Data Science Unit 3 Sprint Challenge 1](#data-science-unit-3-sprint-challenge-1)
-  - [Software Engineering - the Acme Way](#software-engineering---the-acme-way)
-  - [Part 1 - Keeping it Classy](#part-1---keeping-it-classy)
-  - [Part 2 - Objects that Go!](#part-2---objects-that-go)
-  - [Part 3 - A Proper Inheritance](#part-3---a-proper-inheritance)
-  - [Part 4 - Class Report](#part-4---class-report)
-  - [Part 5 - Measure twice, Test once](#part-5---measure-twice-test-once)
-  - [Part 6 - Style it Up](#part-6---style-it-up)
-  - [Part 7 - Questions (and your Answers)](#part-7---questions-and-your-answers)
-  - [Part 8 - Turn it in!](#part-8---turn-it-in)
+    - [Software Engineering - the Acme Way](#software-engineering---the-acme-way)
+    - [Part 1 - Keeping it Classy](#part-1---keeping-it-classy)
+    - [Part 2 - Objects that Go!](#part-2---objects-that-go)
+    - [Part 3 - A Proper Inheritance](#part-3---a-proper-inheritance)
+    - [Part 4 - Class Report](#part-4---class-report)
+    - [Part 5 - Measure twice, Test once](#part-5---measure-twice-test-once)
+    - [Part 6 - Style it Up](#part-6---style-it-up)
+    - [Part 7 - Questions (and your Answers)](#part-7---questions-and-your-answers)
+    - [Part 8 - Turn it in!](#part-8---turn-it-in)
 
 ---
 
@@ -113,12 +113,12 @@ Make a subclass of Product named `BoxingGlove` that does the following:
 - Override the explode method to always return "...it's a glove."
 - Add a punch method that returns "That tickles." 
 
-    if the weight is below 5,
-        "That tickles."
-    if the weight is greater or equal to 5 but less than 15
-        "Hey that hurt!" 
-    otherwise
-        "OUCH!"
+    if the weight is below 5,  
+        "That tickles."  
+    if the weight is greater or equal to 5 but less than 15  
+        "Hey that hurt!"   
+    otherwise  
+        "OUCH!"  
 
 ====== ∫ ======
 
@@ -145,7 +145,7 @@ Your module should include two functions:
 
 - `generate_products()` should generate a given number of products (default 30), randomly, and return them as a list
 - `inventory_report()` takes a list of products, and prints a "nice" summary
-- 
+
 For the purposes of generation, "random" means uniform - all possible values should vary uniformly across the following possibilities:
 
 - name should be a random adjective from ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved'] followed by a space and then a random noun from ['Anvil', 'Catapult' 'Disguise' 'Mousetrap', '???'], 
@@ -261,15 +261,21 @@ Go for lint-free! If there's a stubborn warning or two you can't fix though, it'
 
 Acme Corporation isn't just a few .py files. If you want to grow in your career here, you'll have to answer the following:
 
-What, in your opinion, is an important part of code reviews? That is, what is something you pay attention to when you review code, and that you appreciate when others do the same for your code?
+        What, in your opinion, is an important part of code reviews?  
+        That is, what is something you pay attention to when you review code, 
+        and that you appreciate when others do the same for your code?
 
-Answer: Something that is so important for me in the name of the variable, function methods or classes must be intuitive for everybody. Secondly, the organization of the files in the folder, design different classes and classes for each part of the code, don't mix everything in one function
+The simple act of taking someone else through code that I've written allows me to view it from a different perspective. By doing so it forces you to go through it as if you were reading someone else's code, a process that will give you a good idea of how readable and understandable the code is. That being said, when I'm reading code I pay very close attention to that aspect of it–the readability and ease of understanding. Indeed, it's difficult not to, because you are quite literally _reading_ through it, trying to understand it. I also appreciate when others point that out about my code.
 
-We have an awful lot of computers here, and it gets pretty confusing with slightly different things running on all of them. How could containers help us improve this situation? Docker can run their own environments they are separate from the operating system.
+Additionally, I pay attention to is how neat and organized the code is, with special attention paid to naming and stylistic conventions.
 
-Answer: One person can create an environment with all libraries and packages that are necessary for run a code and other people just need to access and pull that environment and run it in their own machines.
+---
 
-Answer both of these questions (baseline ~5 sentences) here in text.
+We have an awful lot of computers here, and it gets pretty confusing with slightly different things running on all of them. 
+
+        How could containers help us improve this situation? 
+
+With containers, it is possible to isolating a specific environment, keeping it separate from the operating system of whatever machine is running the container. This way, it is much easier to recreate precisely the environment in which the application was _supposed_ to run. Not only does this make the execution of code more reproducible, it allows for easy deployment to any kind of machine—not just the kind of machine on which the code was first written. Whether the deployment is to a colleague's workstation for them to work on the code or to a production server, containers make the process repeatable and consistent.
 
 ---
 

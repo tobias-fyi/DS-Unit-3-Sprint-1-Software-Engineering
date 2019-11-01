@@ -12,15 +12,16 @@ class Product:
     Parameters
     ----------
     name : string 
-        Name of the Product; no default.
+        Name of the Product, no default.
     price : integer 
-        Selling price of the Product; default is $10.
+        Selling price of the Product, by default 10.
     weight : integer 
-        Product Weight; default is 20.
+        Product Weight, by default 20.
     flammability : float 
-        Measure of the Product's flammability; default is 0.5.
+        Measure of the Product's flammability, by default 0.5.
     identifier : integer
-        Auto-generated random (uniform) number between 1000000 and 9999999, inclusive.
+        Auto-generated random (uniform) number 
+        between 1000000 and 9999999, inclusive.
     """
 
     def __init__(
@@ -38,7 +39,10 @@ class Product:
         self.identifier = identifier
 
     def stealability(self):
-        """Calculates price / weight ratio; returns a message stating stealability."""
+        """
+        Calculates price / weight ratio.
+        Returns a message stating stealability.
+        """
 
         # Calculate the price / weight ratio
         pw_ratio = self.price / self.weight
@@ -53,7 +57,7 @@ class Product:
 
     def explode(self):
         """
-        Calculates the product of flammability and weight; returns a message. 
+        Calculates the product of flammability and weight; returns a message.
         """
 
         # Calculate `exp` : product of flammability and weight
@@ -66,3 +70,60 @@ class Product:
             return "...boom!"
         else:
             return "...BABOOM!! No more Chinese laundry."
+
+
+class BoxingGlove(Product):
+    """
+    A general representation of an Acme Boxing Glove; child class of Product.
+    
+    Parameters
+    ----------
+    name : string
+        Name of the Product, no default.
+    price : integer
+        Selling price of the Product, by default 10.
+    weight : integer 
+        Product Weight, by default 10.
+    flammability : float 
+        Measure of the Product's flammability, by default 0.5.
+    identifier : integer
+        Auto-generated random (uniform) number 
+        between 1000000 and 9999999, inclusive.
+    """
+
+    def __init__(
+        self,
+        name,
+        price=10,
+        weight=10,
+        flammability=0.5,
+        identifier=randint(1000000, 9999999),
+    ):
+        super().__init__(
+            name=name,
+            price=price,
+            weight=weight,
+            flammability=flammability,
+            identifier=identifier,
+        )
+
+    def explode(self):
+        """
+        Override the Product's 'explode()' method to specify that this is 
+        indeed a glove (and gloves don't explode).
+        """
+
+        return "...it's a glove."
+
+    def punch(self):
+        """
+        Additional method specifying the results of using a Boxing Glove.
+        """
+
+        # Return message according to weight
+        if self.weight < 5:
+            return "That tickles."
+        elif 5 <= self.weight < 15:
+            return "Hey that hurt!"
+        else:
+            return "OUCH!"
